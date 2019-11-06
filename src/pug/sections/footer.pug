@@ -1,4 +1,18 @@
 //begin footer
-footer.footer(style='background-color:#167;color:#fff;text-align:center;text-transform:uppercase;')
-  h1 footer
+footer.footer
+  .container-lg
+    //begin footer__socials
+    .footer__socials
+      a(href="#").footer__social.footer__social--fb
+        +svg('fb')
+      a(href="#").footer__social.footer__social--inst
+        +svg('inst')
+      a(href="#").footer__social.footer__social--in
+        +svg('in')
+    //end footer__socials
+
+    //begin footer__copyright
+    .footer__copyright
+      span We are human rights fighters, animals lovers, recycling doers, climate change supporters. All rights reserved @ TBD
+    //end footer__copyright
 //end footer

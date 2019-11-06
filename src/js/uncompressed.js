@@ -5,8 +5,8 @@
 
 $(document).ready(function ($) {
   pageWidget([
-    'index',
-    'inner'
+    'contacts',
+    'index'
     ]);
 });
 
