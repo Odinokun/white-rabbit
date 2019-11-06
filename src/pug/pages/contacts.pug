@@ -1,0 +1,54 @@
+extends ../_template
+
+block variables
+  - var title       = 'White Rabbit'
+  - var description = 'White Rabbit'
+  - var ogtitle     = 'White Rabbit'
+
+block content
+  .main-wrap.no-js
+    //begin content
+    main.main.contacts
+      include ../sections/header
+
+      h2.contacts__bg Contacts
+
+      .container
+        .contacts-content
+          .contacts-content__header
+            span Contacts
+
+          .contacts-content__body
+            .contacts-content__left
+              h2.contacts-content__title Contact Us
+              .contacts-content__text
+                span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida a sit nunc aenean diam curabitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida a sit nunc aenean diam curabitur.
+
+            .contacts-content__right
+              h3.contacts-content__name Mrs. Smith
+              h4.contacts-content__position New Business Manager
+              a(href="tel:+14373452355").contacts-content__phone +1 437 345 23 55
+              .contacts-content__email
+                span Email:
+                =' '
+                a(href="mailto:smith@thewr.ca") smith@thewr.ca
+              .contacts-content__email
+                span Reception:
+                =' '
+                a(href="mailto:info@thewr.ca") info@thewr.ca
+              .contacts-content__address
+                span 91 Jameson Avenue, M6K 2W9 Toronto ON
+                span By appointment Only
+              a(href="#").contacts-content__address-link
+                +svg('marker')
+                span View on map
+              .contacts-content__schedule
+                span Office Hours:
+                span Monday – Friday 9.00 AM to 6 PM
+                span Saturday 10 AM – 1 PM
+
+
+
+      include ../sections/footer
+    //end content
+
