@@ -6,11 +6,50 @@ block variables
   - var ogtitle     = 'White Rabbit'
 
 block content
-  .main-wrap.no-js.index
-    include ../sections/header
-
+  .main-wrap.no-js
     //begin content
-    main.main
+    main.main.index
+      include ../sections/index-slider
+      include ../elements/slider-circles
+      include ../sections/header
+
+      .index__content.index-content
+        .index__content-wrap
+          h2.index__title Integrated marketing solutions for medium and small businesses in Toronto
+          span.index__subtitle Established in 2018 for great retail experience and business ideas
+        //begin index__items
+        .index__items.index-items
+          //begin index-items__item
+          .index-items__item.index-items__item--01
+            .index-items__icon
+              +svg('index-item-01')
+            .index-items__text
+              span 10+ successful integrated marketing campaigns for Canadian brands and services.
+          //end index-items__item
+          //begin index-items__item
+          .index-items__item.index-items__item--02
+            .index-items__icon
+              +svg('index-item-02')
+            .index-items__text
+              span Proven expertise in creative ideas, retail strategy and shopper marketing.
+          //end index-items__item
+          //begin index-items__item
+          .index-items__item.index-items__item--03
+            .index-items__icon
+              +svg('index-item-03')
+            .index-items__text
+              span Fast and high-quality execution of projects. Coverage across GTA.
+          //end index-items__item
+        //end index__items
+
+      a(href="#").index__all-cases.all-cases
+        span.all-cases__text View All Cases
+        .all-cases__svg
+          .all-cases__svg-arr
+            +svg('all-cases-arr-lr')
+          .all-cases__svg-circle
+            +svg('all-cases-circle')
+
+      include ../sections/index-footer
     //end content
 
-    include ../sections/footer

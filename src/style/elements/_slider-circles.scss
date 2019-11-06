@@ -1,0 +1,82 @@
+.slider-circles {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 42px;
+  height: 140px;
+  margin: auto;
+  transform: translateX(627px) scale(-1, 1);
+  pointer-events: none;
+
+  @include max(1440) {
+    right: 73px;
+    left: auto;
+    transform: translateX(0) scale(-1, 1);
+  }
+  @include max(1100) {
+    right: 40px;
+  }
+  @include max(680) {
+    top: auto;
+    right: auto;
+    bottom: 127px;
+    left: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 110px;
+    height: 42px;
+  }
+}
+
+.slider-circle {
+  width: 42px;
+  height: 42px;
+  transition: all .1s;
+  opacity: 0;
+  &.active {
+    opacity: 1;
+    .circle-grey {
+      animation: circleLength 5.5s linear forwards;
+    }
+  }
+}
+
+.circle-white {
+  fill: transparent;
+
+  cx: 21px;
+  cy: 21px;
+  r: 20px;
+  stroke: #6b6b6b;
+  stroke-width: 1px;
+}
+
+.circle-grey {
+  fill: transparent;
+  transform: rotate(-90deg) translateX(-121px);
+
+  cx: 100px;
+  cy: 21px;
+  r: 20px;
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-dasharray: 564px;
+  stroke-dashoffset: -130px;
+}
+
+@keyframes circleLength {
+  from {
+    stroke-dashoffset: -130px;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

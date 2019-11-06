@@ -1,0 +1,258 @@
+.index {
+  background-color: $brand;
+
+  @include max(680) {
+    display: flex;
+    flex-direction: column;
+  }
+  @include maxh(799) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.index-content {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 15px 95px 0 165px;
+
+  @include max(1100) {
+    padding: 25px 40px 0 40px;
+  }
+  @include max(680) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-bottom: 170px;
+    padding: 25px 15px 0 15px;
+  }
+  @include maxh(799) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-bottom: 170px;
+    padding: 25px 15px 0 15px;
+  }
+}
+
+.index__title {
+  font-family: $playfair;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  max-width: 830px;
+  margin-bottom: 40px;
+  padding-right: 60px;
+  letter-spacing: .56px;
+  color: #fff;
+
+  @include max(1100) {
+    font-size: 52px;
+    line-height: 63px;
+    max-width: 760px;
+  }
+  @include max(980) {
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 630px;
+    margin-bottom: 30px;
+  }
+  @include maxh(600) {
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 630px;
+    margin-bottom: 30px;
+  }
+  @include max(680) {
+    font-size: 27px;
+    line-height: 1.2;
+    padding-right: 0;
+  }
+  @include maxh(530) {
+    font-size: 27px;
+    line-height: 1.2;
+    padding-right: 0;
+  }
+}
+
+.index__subtitle {
+  font-family: $lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  display: block;
+  max-width: 700px;
+  margin-bottom: 50px;
+  padding-right: 60px;
+  color: #fff;
+
+  @include max(980) {
+    margin-bottom: 40px;
+  }
+  @include maxh(600) {
+    margin-bottom: 40px;
+  }
+  @include max(680) {
+    padding-right: 0;
+  }
+  @include maxh(530) {
+    padding-right: 0;
+  }
+}
+
+.index-items {
+  display: flex;
+  animation-delay: .3s;
+
+  @include max(680) {
+    display: none;
+  }
+  @include maxh(799) {
+    display: none;
+  }
+}
+
+.index-items__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+
+  @include max(980) {
+    margin-right: 30px;
+  }
+}
+
+.index-items__item--01 svg {
+  width: 70px;
+  height: 60px;
+}
+
+.index-items__item--02 svg {
+  width: 54px;
+  height: 56px;
+  margin-top: 5px;
+  margin-left: 7px;
+}
+
+.index-items__item--03 svg {
+  width: 64px;
+  height: 50px;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.index-items__icon {
+  margin-bottom: 22px;
+  svg {
+    fill: #b17742;
+  }
+}
+
+.index-items__text {
+  max-width: 190px;
+  span {
+    font-family: $lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    letter-spacing: .02px;
+    color: #fff;
+  }
+}
+
+.index__all-cases {
+  position: absolute;
+  right: 0;
+  bottom: 130px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 161px;
+  margin: auto;
+  transform: translateX(570px);
+  text-decoration: none;
+
+  @include max(1440) {
+    right: 73px;
+    left: auto;
+    transform: translateX(0);
+  }
+  @include max(1100) {
+    right: 40px;
+  }
+  @include max(680) {
+    right: 15px;
+  }
+  &:hover {
+    .all-cases__svg-arr {
+      transform: translateX(8px);
+      svg {
+        stroke: #b17742;
+      }
+    }
+    .all-cases__svg-circle {
+      svg {
+        stroke: #b17742;
+      }
+    }
+    .all-cases__text {
+      color: #b17742;
+    }
+  }
+}
+
+.all-cases__text {
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: color .5s;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.all-cases__svg {
+  position: relative;
+  width: 44px;
+  height: 31px;
+  margin-left: 25px;
+
+  @include max(680) {
+    margin-left: 15px;
+  }
+  svg {
+    transition: stroke .5s;
+
+    stroke: #fff;
+  }
+}
+
+.all-cases__svg-arr {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 31px;
+  height: 14px;
+  margin: auto;
+  transition: transform .5s;
+  svg {
+    width: 31px;
+    height: 14px;
+    transition: stroke .5s;
+  }
+}
+
+.all-cases__svg-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  svg {
+    width: 31px;
+    height: 31px;
+  }
+}
