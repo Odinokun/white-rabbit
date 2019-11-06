@@ -1,0 +1,36 @@
+//begin header__menu
+.header__menu.header-menu
+  //begin header-menu__mobile-header
+  .header-menu__mobile-header
+    a(href="#").header-menu__mobile-logo
+      img(src="assets/img/logo.svg" alt="White Rabbit")
+    a(href="#").header-menu__close
+      +svg('close')
+  //end header-menu__mobile-header
+
+  //begin header-menu__list
+  ul.header-menu__list
+    li.header-menu__item
+      a(href="#").header-menu__link.active Home
+    li.header-menu__item
+      a(href="#").header-menu__link Services
+    li.header-menu__item
+      a(href="#").header-menu__link Cases
+    li.header-menu__item
+      a(href="#").header-menu__link Contacts
+  //end header-menu__list
+
+  a(href="#").header-menu__brief-btn.brief-btn
+    span Brief Us
+    +svg('carrot')
+
+  .header-menu__socials
+    a(href="#").header-menu__social.header-menu__social--fb
+      +svg('fb')
+    a(href="#").header-menu__social.header-menu__social--inst
+      +svg('inst')
+    a(href="#").header-menu__social.header-menu__social--in
+      +svg('in')
+
+  span.header-menu__copyright We are human rights fighters, animals lovers, recycling doers, climate change supporters. All rights reserved @ TBD
+//end header__menu

@@ -13,7 +13,10 @@ $(function() {
   // require('./modules/scroll2ancor')();
 
   // begin Slick slider
-  // require('./modules/slick')();
+  require('./modules/slick')();
+
+  // begin menu
+  require('./modules/menu')();
 
   // begin Popup
   // require('./modules/popup')();
@@ -23,8 +26,8 @@ $(function() {
 
   // begin Animate.css
   //РАБОТАЕТ ТОЛЬКО С JQUERY < 3.0.0 !!!!!!!!!!!!!!!!!!
-  // require('./modules/waypoints')();
-  // require('./modules/animateCss')();
+  require('./modules/waypoints')();
+  require('./modules/animateCss')();
 
   // begin Fancybox3
   // require('./modules/fancybox')();

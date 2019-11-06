@@ -9,12 +9,15 @@
 //@import 'elements/burger';
 //@import 'elements/pagination';
 //@import 'elements/popup';
-//@import 'elements/slickBase';
-// @import 'elements/stickyHeader';
+@import 'elements/slickBase';
+@import 'elements/menu';
+@import 'elements/slider-circles';
 
 //section
 @import 'sections/footer';
 @import 'sections/header';
+@import 'sections/index-footer';
+@import 'sections/index-slider';
 
 //pages
 @import 'pages/index';
