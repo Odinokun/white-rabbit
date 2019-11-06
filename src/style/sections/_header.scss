@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  z-index: 10;
   animation-delay: .15s;
   .container-lg {
     display: flex;
@@ -48,10 +49,17 @@
   width: 143px;
   height: 50px;
   margin-left: 45px;
+  transition: all .5s;
   text-decoration: none;
   border: 1px solid #fff;
   border-radius: 24px;
   background-color: rgba(23, 23, 23, .5);
+  &:hover {
+    border-color: #f98e25;
+    span {
+      color: #f98e25;
+    }
+  }
   svg {
     flex: none;
     fill: #f98e25;
@@ -63,6 +71,7 @@
     font-family: $lato;
     font-size: 16px;
     font-weight: 700;
+    transition: color .5s;
     white-space: nowrap;
     letter-spacing: .8px;
     color: #fff;
@@ -92,6 +101,12 @@
   }
   @include max(680) {
     margin: 15px auto 50px;
+  }
+  &:hover {
+    border-color: #fff;
+    span {
+      color: #fff;
+    }
   }
 }
 

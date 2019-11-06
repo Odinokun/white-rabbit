@@ -1,0 +1,38 @@
+extends ../_template
+
+block variables
+  - var title       = 'White Rabbit'
+  - var description = 'White Rabbit'
+  - var ogtitle     = 'White Rabbit'
+
+block content
+  .main-wrap.no-js
+    //begin content
+    main.main.error
+      include ../sections/header
+
+      .container
+        .error-content
+          .error-content__header
+            span Ooops
+
+          .error-content__body
+            .error-content__left
+              h2.error-content__title Looks like nothing here
+              .error-content__text
+                span Sorry about this. It seems as though the page you are looking for no longer exists or has been moved.
+
+              a(href="#").error-content__back.error-back
+                span.error-back__text Go to the homepage
+                .error-back__svg
+                  .error-back__svg-arr
+                    +svg('all-cases-arr-lr')
+                  .error-back__svg-circle
+                    +svg('all-cases-circle')
+
+            .error-content__right
+              img(src="assets/img/404.png" alt="error")
+
+      include ../sections/footer
+    //end content
+

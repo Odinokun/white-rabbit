@@ -15,6 +15,14 @@ module.exports = function() {
   $('.contacts-content__text').addClass("animated fadeInUp");
 
   $('.contacts-content__right').addClass("animated fadeIn");
+
+  //error
+  $('.error-content__title').addClass("animated fadeInUp");
+  $('.error-content__text').addClass("animated fadeInUp");
+
+  $('.error-content__right').addClass("animated fadeIn");
+
+
   // $(".index__content-wrap, .index__items").waypoint(function() {
   //   $(this).addClass("animated fadeInUp");
   // }, {
