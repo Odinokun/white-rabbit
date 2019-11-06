@@ -3,8 +3,11 @@ module.exports = function() {
   // begin Animate CSS + WayPoints javaScript Plugin
   //РАБОТАЕТ ТОЛЬКО С JQUERY < 3.0.0 !!!!!!!!!!!!!!!!!!
 
+
   $('.index__content-wrap').addClass("animated fadeInUp");
   $('.index__items').addClass("animated fadeInUp");
+
+  $('.header, .index-footer').addClass("animated fadeIn");
 
   // $(".index__content-wrap, .index__items").waypoint(function() {
   //   $(this).addClass("animated fadeInUp");

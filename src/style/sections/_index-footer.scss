@@ -5,6 +5,7 @@
   left: 0;
   overflow: hidden;
   margin: 0 auto;
+  animation-delay: .15s;
   .container-lg {
     display: flex;
     align-items: flex-end;
@@ -15,6 +16,7 @@
     @include max(1100) {
       padding-left: 40px;
     }
+
     @include max(680) {
       padding-left: 15px;
     }
@@ -35,6 +37,7 @@
     max-width: 37px;
     padding: 10px 15px 23px 20px;
   }
+
   @include max(680) {
     display: none;
   }
@@ -81,6 +84,7 @@
   @include max(980) {
     display: none;
   }
+
   span {
     font-family: $lato;
     font-size: 16px;
@@ -109,12 +113,15 @@
       display: none;
     }
   }
+
   @include max(680) {
     max-width: 100%;
   }
+
   @include max(680) {
     padding: 15px;
   }
+
   &::before {
     position: absolute;
     top: 0;
@@ -140,6 +147,7 @@
     transform: translateY(-50%);
     opacity: 0;
   }
+
   &.active {
     opacity: 1;
   }
