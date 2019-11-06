@@ -1,7 +1,3 @@
-.contacts {
-  background-color: #171717;
-}
-
 .contacts__bg {
   font-family: $playfair;
   font-size: 304px;
@@ -32,16 +28,15 @@
   }
 }
 
-
 .contacts-content__header {
   position: relative;
   margin-bottom: 30px;
   padding-top: 50px;
+
   @include max(425) {
     margin-bottom: 15px;
     padding-top: 25px;
   }
-
   span {
     font-family: $lato;
     font-size: 16px;
@@ -66,11 +61,10 @@
   }
 }
 
-
-
 .contacts-content__body {
   display: flex;
   padding-bottom: 20px;
+
   @include max(680) {
     flex-direction: column;
   }
@@ -78,6 +72,7 @@
 
 .contacts-content__left {
   padding-right: 120px;
+
   @include max(980) {
     padding-right: 50px;
   }
@@ -85,6 +80,7 @@
     padding-right: 0;
   }
 }
+
 .contacts-content__title {
   font-family: $playfair;
   font-size: 56px;
@@ -95,6 +91,7 @@
   animation-delay: .2s;
   letter-spacing: .56px;
   color: #fff;
+
   @include max(980) {
     padding-left: 0;
   }
@@ -108,21 +105,24 @@
 .contacts-content__text {
   max-width: 545px;
   padding-left: 95px;
+  animation-delay: .3s;
+
   @include max(980) {
     padding-left: 0;
   }
-  animation-delay: .3s;
   span {
     font-family: $lato;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     color: #fff;
+
     @include max(425) {
       font-size: 16px;
     }
   }
 }
+
 .contacts-content__right {
   display: flex;
   flex-direction: column;
@@ -216,6 +216,7 @@
   text-decoration: none;
   letter-spacing: .02px;
   color: #b17742;
+
   @include max(680) {
     transform: translateX(30px);
   }
@@ -236,6 +237,7 @@
     transition: fill .5s;
   }
 }
+
 .contacts-content__schedule {
   font-family: $lato;
   font-size: 16px;

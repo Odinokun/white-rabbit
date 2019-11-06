@@ -94,6 +94,7 @@
   @include max(980) {
     margin: 0 auto;
   }
+
   &:nth-child(1) {
     animation-delay: .3s;
   }
@@ -150,6 +151,7 @@
     margin-bottom: 20px;
     letter-spacing: .27px;
   }
+
   &.active {
     pointer-events: none;
   }
