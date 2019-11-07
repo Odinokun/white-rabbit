@@ -132,7 +132,7 @@
     letter-spacing: .4px;
     color: #fff;
 
-    @include max(768) {
+    @include max(980) {
       font-size: 24px;
       letter-spacing: .24px;
     }

@@ -5,6 +5,7 @@
 
 $(document).ready(function ($) {
   pageWidget([
+    'brief',
     'project',
     'cases',
     'error',
