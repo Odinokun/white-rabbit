@@ -1,0 +1,40 @@
+//begin project-top
+.project-top
+  .project-top__bg(style='background-image: url("assets/img/bg-index-01.jpg")')
+  .container
+
+    .project-top__text
+      h3.project-top__subtitle Branding / Digital
+      h2.project-top__title Bounty Mermaid Maldives Party 2019
+    .project-top__anim-icon
+      include ../elements/use-scroll
+
+    //begin project-top-descr
+    .project-top__descr.project-top-descr
+      //begin project-top-descr__left
+      .project-top-descr__left
+        span.project-top-descr__kind Client
+        h3.project-top-descr__title Bounty Mermaid
+        .project-top-descr__items
+          .project-top-descr__item
+            span Duration
+            span 1 month
+          .project-top-descr__item
+            span Coverage
+            span 10 Tim Hortons shops
+      //end project-top-descr__left
+
+      //begin project-top-descr__right
+      .project-top-descr__right
+        a(href="#project-second").project-top-descr__more
+          span.project-top-descr__text More Info
+          .project-top-descr__svg
+            .project-top-descr__svg-arr
+              +svg('project-arr-tb')
+            .project-top-descr__svg-circle
+              +svg('all-cases-circle')
+      //end project-top-descr__right
+    //end project-top-descr
+
+
+//end project-top

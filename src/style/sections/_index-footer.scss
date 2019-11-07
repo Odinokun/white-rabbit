@@ -16,7 +16,6 @@
     @include max(1100) {
       padding-left: 40px;
     }
-
     @include max(680) {
       padding-left: 15px;
     }
@@ -37,7 +36,6 @@
     max-width: 37px;
     padding: 10px 15px 23px 20px;
   }
-
   @include max(680) {
     display: none;
   }
@@ -113,11 +111,9 @@
       display: none;
     }
   }
-
   @include max(680) {
     max-width: 100%;
   }
-
   @include max(680) {
     padding: 15px;
   }
@@ -138,6 +134,7 @@
   margin-right: 15px;
   cursor: pointer;
   transition: opacity .5s;
+  text-decoration: none;
 
   @include max(680) {
     position: absolute;
