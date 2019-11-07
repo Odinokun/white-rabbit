@@ -1,0 +1,211 @@
+.brief {
+  .brief-btn {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.brief__bg {
+  font-family: $playfair;
+  font-size: 304px;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 3.04px;
+  opacity: .6;
+  color: #171717;
+  text-shadow: 0 1px 79px #000, 0 11px 25px rgba(0, 0, 0, .34), 0 4px 4px rgba(0, 0, 0, .69);
+
+  @include max(980) {
+    font-size: 250px;
+  }
+  @include max(680) {
+    font-size: 170px;
+  }
+  @include max(425) {
+    font-size: 120px;
+  }
+}
+
+.brief-content__header {
+  position: relative;
+  margin-bottom: 7px;
+  padding-top: 43px;
+
+  span {
+    font-family: $lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    display: block;
+    padding-left: 95px;
+    letter-spacing: .02px;
+    color: #b17742;
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 65px;
+      height: 2px;
+      margin: auto;
+      content: '';
+      background-color: #b17742;
+    }
+  }
+}
+
+.brief-content__body {
+  display: flex;
+
+  @include max(680) {
+    flex-direction: column;
+  }
+}
+
+.brief-content__left {
+  flex: 1;
+}
+
+.brief-content__title {
+  font-family: $playfair;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 20px;
+  padding-left: 95px;
+  animation-delay: .2s;
+  letter-spacing: .32px;
+  color: #fff;
+
+  @include max(980) {
+    padding-left: 0;
+  }
+}
+
+.brief-content__subtitle {
+  font-family: $lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 545px;
+  padding-left: 95px;
+  animation-delay: .3s;
+  color: #fff;
+
+  @include max(980) {
+    padding-left: 0;
+  }
+}
+
+.brief-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: 95px;
+  padding-top: 45px;
+
+  @include max(980) {
+    margin-left: 0;
+  }
+  @include max(680) {
+    margin-bottom: 0;
+  }
+}
+
+.brief-form__left,
+.brief-form__right {
+  width: 50%;
+  padding-right: 40px;
+
+  @include max(680) {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.brief-form__footer {
+  width: 100%;
+  padding-top: 30px;
+
+  @include max(680) {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+  }
+}
+
+.brief-form__input,
+.brief-form__textarea {
+  font-family: $lato;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  margin-bottom: 26px;
+  padding: 8px 0;
+  letter-spacing: .02px;
+  color: #fff;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #9c9c9c;
+  border-left: none;
+  background-color: transparent;
+
+  @include placeholder-color(#fff);
+}
+
+.brief-form__textarea {
+  height: 157px;
+
+  @include max(680) {
+    height: 100px;
+  }
+}
+
+.brief-form__btn {
+  font-family: $lato;
+  font-size: 16px;
+  font-weight: 700;
+  width: 156px;
+  height: 48px;
+  text-align: center;
+  letter-spacing: .8px;
+  color: #171717;
+  border-radius: 24px !important;
+  background-color: #f98e25;
+}
+
+.brief-content__right {
+  margin-left: auto;
+  padding: 0 45px;
+
+  @include max(980) {
+    padding: 0 15px;
+  }
+  @include max(680) {
+    margin: 30px auto;
+  }
+  img {
+    display: block;
+    width: 275px;
+    height: 419px;
+    transform: translateY(-40px);
+
+    @include max(1100) {
+      width: 220px;
+      height: 335px;
+      transform: translateY(40px);
+    }
+    @include max(980) {
+      width: 200px;
+      height: 305px;
+      transform: translateY(60px);
+    }
+    @include max(680) {
+      transform: translateY(0);
+    }
+  }
+}

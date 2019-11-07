@@ -1,0 +1,46 @@
+extends ../_template
+
+block variables
+  - var title       = 'White Rabbit'
+  - var description = 'White Rabbit'
+  - var ogtitle     = 'White Rabbit'
+
+block content
+  .main-wrap.no-js
+    //begin content
+    main.main.brief
+      include ../sections/header
+
+      h2.brief__bg
+        |Brief
+        br
+        |Us
+
+      .container
+        .brief-content
+          .brief-content__header
+            span Brief Us
+
+          .brief-content__body
+            .brief-content__left
+              h2.brief-content__title Dream about project?
+              h3.brief-content__subtitle Use the form below or send us an email
+
+              form.brief-content__form.brief-form
+                .brief-form__left
+                  input.brief-form__input(placeholder='Company' required)
+                  input.brief-form__input(placeholder='Contacts person' required)
+                  input.brief-form__input(placeholder='Phone' required)
+                  input.brief-form__input(placeholder='E-mail' required)
+                .brief-form__right
+                  input.brief-form__input(placeholder='Deadline' required)
+                  textarea.brief-form__textarea(placeholder='Task description (briefly)')
+                .brief-form__footer
+                  input.brief-form__btn(type='submit' value='Send')
+
+            .brief-content__right
+              img(src="assets/img/project-rabbit.svg" alt="picture")
+
+      include ../sections/footer
+    //end content
+
