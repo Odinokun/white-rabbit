@@ -6,7 +6,6 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -135,7 +134,6 @@ ol > *:not(li) {
 .main-wrap {
   display: flex;
   flex-direction: column;
-  height: 100%;
   min-height: 100vh;
   background-color: #171717;
   //свойство для плавной прокрутки на яблоках
