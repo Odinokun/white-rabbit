@@ -10,7 +10,7 @@ $(function() {
   // require('./modules/maskedinput')();
 
   // begin Scroll2Ancor
-  // require('./modules/scroll2ancor')();
+  require('./modules/scroll2ancor')();
 
   // begin Slick slider
   require('./modules/slick')();
@@ -21,8 +21,8 @@ $(function() {
   // begin Popup
   // require('./modules/popup')();
 
-  // begin Sticky header
-  // require('./modules/stickyHeader')();
+  // begin Parallax
+  require('./modules/parallax')();
 
   // begin Animate.css
   //РАБОТАЕТ ТОЛЬКО С JQUERY < 3.0.0 !!!!!!!!!!!!!!!!!!

@@ -4,8 +4,9 @@
   .container
 
     .project-top__text
-      h3.project-top__subtitle Branding / Digital
-      h2.project-top__title Bounty Mermaid Maldives Party 2019
+      .project-top__text-inn
+        h3.project-top__subtitle Branding / Digital
+        h2.project-top__title Bounty Mermaid Maldives Party 2019
     .project-top__anim-icon
       include ../elements/use-scroll
 
@@ -26,7 +27,7 @@
 
       //begin project-top-descr__right
       .project-top-descr__right
-        a(href="#project-second").project-top-descr__more
+        a(href="#project-second").project-top-descr__more.scroll-link
           span.project-top-descr__text More Info
           .project-top-descr__svg
             .project-top-descr__svg-arr
@@ -35,6 +36,4 @@
               +svg('all-cases-circle')
       //end project-top-descr__right
     //end project-top-descr
-
-
 //end project-top

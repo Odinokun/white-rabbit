@@ -22,6 +22,12 @@ module.exports = function() {
 
   $('.error-content__right').addClass("animated fadeIn");
 
+  //project
+  $('.project-top__text-inn').addClass("animated fadeInUp");
+
+  $('.project-top__anim-icon').addClass("animated fadeIn");
+  $('.project-top__descr').addClass("animated fadeIn");
+
 
   // $(".index__content-wrap, .index__items").waypoint(function() {
   //   $(this).addClass("animated fadeInUp");

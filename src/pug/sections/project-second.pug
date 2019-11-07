@@ -1,0 +1,41 @@
+//begin project-second
+.project-second#project-second
+
+  .project-second__bg Project
+
+  //begin project-second__items
+  .project-second__items
+    .project-second__item
+      h3.project-second__title Brief
+      span.project-second__text To generate the sales leads.
+      span.project-second__text To build product awareness.
+    .project-second__item
+      h3.project-second__title Idea
+      span.project-second__text Two CIBC Visa brand ambassador worked with Tablet PC inside of Tim Hortons coffee shops and proposed customers to complete the on-line questionarrie to get one free coffee and the opportunity to be approved for Visa credit card by CIBC.
+    .project-second__item
+      h3.project-second__title Results
+      span.project-second__text Number of contacts per Project: 5,560 leads and over 10, 000 awareness contacts
+  //end project-second__items
+
+  include project-second-slider
+
+  //begin project-second__footer
+  .project-second__footer
+    .container
+      .project__rabbit
+        img(src="assets/img/project-rabbit.svg" alt="rabbit")
+        span You may also like
+
+      .project-second__anim-icon
+        include ../elements/brief-us
+
+      a(href="#").project-second__back.project-second-back
+        span.project-second-back__text Back to Cases
+        .project-second-back__svg
+          .project-second-back__svg-arr
+            +svg('all-cases-arr-lr')
+          .project-second-back__svg-circle
+            +svg('all-cases-circle')
+  //end project-second__footer
+
+//end project-second
