@@ -1,0 +1,41 @@
+extends ../_template
+
+block variables
+  - var title       = 'White Rabbit'
+  - var description = 'White Rabbit'
+  - var ogtitle     = 'White Rabbit'
+
+block content
+  .main-wrap.no-js
+    //begin content
+    main.main.thnx
+      include ../sections/header
+
+      h2.thnx__bg
+        |Brief
+        br
+        |Us
+
+      .container
+        .thnx-content
+          .thnx-content__header
+            span Ok!
+
+          .thnx-content__body
+            .thnx-content__left
+              h2.thnx-content__title Thank you!
+              h3.thnx-content__subtitle Most likely we have already received your message and are preparing an answer for you. And while you are waiting for an answer, we recommend following us on our social networks!
+              .thnx-content__socials
+                a(href="#" target='_blank').thnx-content__social.thnx-content__social--fb
+                  +svg('fb')
+                a(href="#" target='_blank').thnx-content__social.thnx-content__social--inst
+                  +svg('inst')
+                a(href="#" target='_blank').thnx-content__social.thnx-content__social--in
+                  +svg('in')
+
+            .thnx-content__right
+              img(src="assets/img/project-rabbit.svg" alt="picture")
+
+      include ../sections/footer
+    //end content
+
