@@ -2,7 +2,7 @@ module.exports = function() {
 
   // begin scroll 2 ancore desktop menu
   $(function() {
-    $('nav a[href*=\\#]').on("click", function(e){
+    $('.scroll-link[href*=\\#]').on("click", function(e){
        // e.preventDefault();
        var anchor = $(this);
        $('html, body').stop().animate({

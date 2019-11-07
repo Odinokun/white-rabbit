@@ -5,10 +5,6 @@
 @import 'core/base';
 
 //elements
-//@import 'elements/breadcrumbs';
-//@import 'elements/burger';
-//@import 'elements/pagination';
-//@import 'elements/popup';
 @import 'elements/slickBase';
 @import 'elements/menu';
 @import 'elements/slider-circles';
@@ -18,9 +14,13 @@
 @import 'sections/header';
 @import 'sections/index-footer';
 @import 'sections/index-slider';
+@import 'sections/project-top';
+@import 'sections/project-second';
+@import 'sections/project-second-slider';
 
 //pages
 @import 'pages/index';
 @import 'pages/contacts';
 @import 'pages/error';
 @import 'pages/cases';
+@import 'pages/project';

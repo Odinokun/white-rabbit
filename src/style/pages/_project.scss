@@ -1,0 +1,15 @@
+.project {
+  .header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .cases-content {
+    margin-bottom: 20px;
+
+    @include max(680) {
+      margin-bottom: 0;
+    }
+  }
+}

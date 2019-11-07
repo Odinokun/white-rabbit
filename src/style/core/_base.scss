@@ -101,7 +101,7 @@ textarea.error {
 
 svg {
   display: block;
-  overflow: visible;
+  overflow: visible !important;
 }
 
 // подсвечиваем картинки без alt и без заполненного alt

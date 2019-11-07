@@ -1,0 +1,31 @@
+extends ../_template
+
+mixin cases-item(img, kind, title)
+  .cases-item
+    a(href="#").cases-item__link
+      .cases-item__img
+        img(src="assets/img/case-" + img + ".jpg" alt="picture")
+      .cases-item__descr
+        span.cases-item__kind #{kind}
+        h3.cases-item__title #{title}
+        .cases-item__arr
+          +svg('cases-arr')
+
+block variables
+  - var title       = 'White Rabbit'
+  - var description = 'White Rabbit'
+  - var ogtitle     = 'White Rabbit'
+
+block content
+  .main-wrap.no-js
+    //begin content
+    main.main.project
+      include ../sections/header
+
+      include ../sections/project-top
+      include ../sections/project-second
+      include ../sections/cases-slider
+
+      include ../sections/footer
+    //end content
+

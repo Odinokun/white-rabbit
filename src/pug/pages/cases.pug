@@ -1,16 +1,5 @@
 extends ../_template
 
-mixin cases-item(img, kind, title)
-  .cases-item
-    a(href="#").cases-item__link
-      .cases-item__img
-        img(src="assets/img/case-" + img + ".jpg" alt="picture")
-      .cases-item__descr
-        span.cases-item__kind #{kind}
-        h3.cases-item__title #{title}
-        .cases-item__arr
-          +svg('cases-arr')
-
 block variables
   - var title       = 'White Rabbit'
   - var description = 'White Rabbit'
@@ -24,16 +13,7 @@ block content
 
       h2.cases__bg Cases
 
-      .cases-content
-        .container
-          .cases-slider
-            +cases-item('01', 'Branding', 'Global Crypto-Summit 2019 in Toronto')
-            +cases-item('02', 'Branding / Digital', 'Bounty Mermaid Maldives Party 2019')
-            +cases-item('03', 'Branding', 'Amsterdam Coffee Shop Barista Battle')
-            +cases-item('01', 'Branding', 'Global Crypto-Summit 2019 in Toronto')
-            +cases-item('02', 'Branding / Digital', 'Bounty Mermaid Maldives Party 2019')
-            +cases-item('03', 'Branding', 'Amsterdam Coffee Shop Barista Battle')
-
+      include ../sections/cases-slider
 
       //begin cases__animation-icon
       .cases__animation-icon

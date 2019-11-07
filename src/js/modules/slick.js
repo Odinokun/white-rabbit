@@ -44,9 +44,50 @@ module.exports = function () {
     ]
   });
 
-  const slider = $(".cases-slider");
+  $(".cases-slider").on("wheel", function(e) {
+    e.preventDefault();
 
-  slider.on("wheel", function(e) {
+    if (e.originalEvent.deltaY < 0) {
+      $(this).slick("slickPrev");
+    } else {
+      $(this).slick("slickNext");
+    }
+  });
+
+
+
+  $('.project-slider').slick({
+    infinite: true,
+    dots:false,
+    arrows:false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    draggable: true,
+    touchMove: true,
+    swipe: true,
+    touchThreshold: 100,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 981,
+        settings: {
+          slidesToShow: 3
+        }
+      }, {
+        breakpoint: 681,
+        settings: {
+          slidesToShow: 2
+        }
+      }, {
+        breakpoint: 426,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+  $(".project-slider").on("wheel", function(e) {
     e.preventDefault();
 
     if (e.originalEvent.deltaY < 0) {

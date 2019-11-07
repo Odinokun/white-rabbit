@@ -1,0 +1,243 @@
+.project-second {
+  position: relative;
+  margin-bottom: 55px;
+
+  @include max(680) {
+    margin-bottom: 25px;
+  }
+}
+
+.project-second__bg {
+  font-family: $playfair;
+  font-size: 304px;
+  font-weight: 700;
+  line-height: 270px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 3.04px;
+  opacity: .6;
+  color: #171717;
+  text-shadow: 0 1px 79px #000, 0 11px 25px rgba(0, 0, 0, .34), 0 4px 4px rgba(0, 0, 0, .69);
+
+  @include max(1100) {
+    font-size: 270px;
+  }
+  @include max(980) {
+    font-size: 199px;
+    line-height: 230px;
+    letter-spacing: 1.99px;
+  }
+  @include max(680) {
+    font-size: 120px;
+    line-height: 1.15;
+  }
+  @include max(425) {
+    font-size: 83px;
+    line-height: 1.4;
+    letter-spacing: .83px;
+  }
+}
+
+.project-second__items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 30px 0 30px;
+
+  @include max(680) {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 90px 0 0 0;
+  }
+  @include max(425) {
+    margin-bottom: 20px;
+    padding: 70px 0 0 0;
+  }
+}
+
+.project-second__item {
+  width: 33.33%;
+  margin-bottom: 18px;
+  padding: 0 30px;
+
+  @include max(680) {
+    width: 100%;
+    padding: 0 15px;
+  }
+  @include max(425) {
+    padding: 0 15px 15px 15px;
+  }
+}
+
+.project-second__title {
+  font-family: $playfair;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 20px;
+  letter-spacing: .32px;
+  color: #b17742;
+
+  @include max(425) {
+    font-size: 27px;
+  }
+}
+
+.project-second__text {
+  font-family: $lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  letter-spacing: .02px;
+  color: #fff;
+
+  @include max(425) {
+    margin-bottom: 0;
+  }
+}
+
+.project-second__footer {
+  overflow: hidden;
+}
+
+.project__rabbit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    display: block;
+    width: 130px;
+    height: 198px;
+    margin-bottom: 5px;
+
+    @include max(425) {
+      width: 110px;
+      height: 168px;
+    }
+  }
+  span {
+    font-family: $playfair;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    display: inline-block;
+    margin-bottom: 3px;
+    letter-spacing: .4px;
+    color: #fff;
+
+    @include max(768) {
+      font-size: 24px;
+      letter-spacing: .24px;
+    }
+  }
+}
+
+.project-second__anim-icon {
+  position: absolute;
+  top: 24px;
+  right: -5px;
+  width: 94px;
+  height: 94px;
+
+  @include max(1300) {
+    right: 30px;
+  }
+  @include max(425) {
+    top: 0;
+    right: -15px;
+  }
+  svg {
+    width: 94px;
+    height: 94px;
+  }
+}
+
+.project-second-back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  text-decoration: none;
+
+  @include max(1100) {
+    right: 30px;
+  }
+  @include max(980) {
+    margin: 0 auto;
+  }
+  @include max(680) {
+    display: none;
+  }
+
+  &:hover {
+    .project-second-back__svg-arr {
+      transform: translateX(8px);
+    }
+    .project-second-back__text {
+      color: #fff;
+    }
+  }
+}
+
+.project-second-back__text {
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: color .5s;
+  white-space: nowrap;
+  color: #9c9c9c;
+}
+
+.project-second-back__svg {
+  position: relative;
+  width: 44px;
+  height: 31px;
+  margin-left: 30px;
+  transform: rotate(180deg);
+
+  @include max(680) {
+    margin-left: 15px;
+  }
+}
+
+.project-second-back__svg-arr {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 31px;
+  height: 14px;
+  margin: auto;
+  transition: transform .5s;
+  svg {
+    width: 31px;
+    height: 14px;
+    transition: stroke .5s;
+
+    stroke: #b17742;
+  }
+}
+
+.project-second-back__svg-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: stroke .5s;
+
+  svg {
+    width: 31px;
+    height: 31px;
+
+    stroke: #fff;
+  }
+}
