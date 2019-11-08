@@ -1,0 +1,73 @@
+extends ../_template
+
+block variables
+  - var title       = 'White Rabbit'
+  - var description = 'White Rabbit'
+  - var ogtitle     = 'White Rabbit'
+
+block content
+  .main-wrap.no-js
+    //begin content
+    main.main.services
+      include ../sections/header
+      include ../elements/services-circles
+
+      h2.services__bg Services
+
+      .container-lg
+        .services-content
+          .services-content__header
+            span We do best
+
+          .services-content__slider
+            //begin services-content__slider-left
+            .services-content__slider-left
+              h3.services-content__slider-title.services-content__slider-title--00.active(data-slide='0') Consumer Promotion and Events
+              h3.services-content__slider-title.services-content__slider-title--01(data-slide='1') Retail and Shopper Marketing
+              h3.services-content__slider-title.services-content__slider-title--02(data-slide='2') B2B Projects
+            //end services-content__slider-left
+
+            //begin services-content__slider-right
+            .services-content__slider-right
+              //begin services-slider
+              .services-slider
+                //begin services-slider__list
+                ul.services-slider__list
+                  li.services-slider__item Hard sell
+                  li.services-slider__item Test-drives
+                  li.services-slider__item Collect & get buy & win programs
+                  li.services-slider__item Trade & road shows
+                  li.services-slider__item Sampling, tasting, demonstrations
+                  li.services-slider__item Sales exhibitions
+                  li.services-slider__item Conceptual parties
+                  li.services-slider__item Festivals and events
+                //end services-slider__list
+                //begin services-slider__list
+                ul.services-slider__list
+                  li.services-slider__item 2Hard sell
+                  li.services-slider__item Test-drives
+                  li.services-slider__item Collect & get buy & win programs
+                  li.services-slider__item Trade & road shows
+                  li.services-slider__item Sampling, tasting, demonstrations
+                  li.services-slider__item Sales exhibitions
+                  li.services-slider__item Conceptual parties
+                  li.services-slider__item Festivals and events
+                //end services-slider__list
+                //begin services-slider__list
+                ul.services-slider__list
+                  li.services-slider__item 3Hard sell
+                  li.services-slider__item Test-drives
+                  li.services-slider__item Collect & get buy & win programs
+                  li.services-slider__item Trade & road shows
+                  li.services-slider__item Sampling, tasting, demonstrations
+                  li.services-slider__item Sales exhibitions
+                  li.services-slider__item Conceptual parties
+                  li.services-slider__item Festivals and events
+                //end services-slider__list
+              //end services-slider
+
+            //end services-content__slider-right
+
+      include ../sections/footer
+    //end content
+
