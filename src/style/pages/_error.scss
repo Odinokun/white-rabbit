@@ -1,11 +1,21 @@
+.error{
+  .footer {
+    margin-top: 0;
+  }
+  & > .container {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
 .error-content__header {
   position: relative;
   margin-bottom: 30px;
-  padding-top: 50px;
+  //padding-top: 50px;
 
   @include max(425) {
     margin-bottom: 15px;
-    padding-top: 25px;
+    //padding-top: 25px;
   }
 
   span {
@@ -35,7 +45,7 @@
 .error-content__body {
   display: flex;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   @include max(980) {
     flex-direction: column-reverse;

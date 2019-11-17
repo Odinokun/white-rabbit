@@ -1,3 +1,13 @@
+.services {
+  .footer {
+    margin-top: 0;
+  }
+  & > .container-lg {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
 .services__bg {
   font-family: $playfair;
   font-size: 304px;
@@ -7,6 +17,7 @@
   top: 0;
   left: 0;
   letter-spacing: 3.04px;
+  pointer-events: none;
   opacity: .6;
   color: #171717;
   text-shadow: 0 1px 79px #000, 0 11px 25px rgba(0, 0, 0, .34), 0 4px 4px rgba(0, 0, 0, .69);
@@ -44,6 +55,7 @@
     margin-bottom: 15px;
     padding-top: 25px;
   }
+
   span {
     font-family: $lato;
     font-size: 16px;
@@ -116,8 +128,12 @@
     margin-bottom: 20px;
     letter-spacing: .24px;
   }
+  &:hover {
+    color: #b17742;
+  }
 
   &.active {
+    pointer-events: none;
     color: #fff;
   }
 }

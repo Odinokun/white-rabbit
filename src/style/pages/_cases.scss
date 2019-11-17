@@ -81,6 +81,14 @@
   @include max(680) {
     margin-right: 20px;
   }
+  &:hover {
+    .cases-item__title {
+      color: #b17742;
+    }
+    .cases-item__arr svg {
+      fill: #b17742;
+    }
+  }
 }
 
 .cases-item__img {
@@ -133,6 +141,7 @@
   font-weight: 700;
   line-height: 32px;
   margin-bottom: 0;
+  transition: color .5s;
   letter-spacing: .24px;
   color: #171717;
 
@@ -153,6 +162,7 @@
     fill: #171717;
     width: 18px;
     height: 18px;
+    transition: fill .5s;
   }
 }
 
