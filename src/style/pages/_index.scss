@@ -1,5 +1,7 @@
 .index {
+  overflow: hidden;
   background-color: $brand;
+  padding-bottom: 120px;
 
   @include max(680) {
     display: flex;
@@ -13,8 +15,9 @@
 
 .index-content {
   position: relative;
+  width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
+  margin:  auto;
   padding: 15px 95px 0 165px;
 
   @include max(1100) {

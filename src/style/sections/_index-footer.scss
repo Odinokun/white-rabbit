@@ -144,6 +144,11 @@
     transform: translateY(-50%);
     opacity: 0;
   }
+  &:hover {
+    span {
+      color: #b17742 !important;
+    }
+  }
 
   &.active {
     opacity: 1;
