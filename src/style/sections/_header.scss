@@ -2,6 +2,7 @@
   position: relative;
   z-index: 10;
   animation-delay: .15s;
+
   .container-lg {
     display: flex;
     justify-content: space-between;
@@ -102,6 +103,7 @@
   @include max(680) {
     margin: 15px auto 50px;
   }
+
   &:hover {
     border-color: #fff;
     span {
