@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    margin-bottom: 170px;
+    //margin-bottom: 170px;
     padding: 25px 15px 0 15px;
   }
   @include maxh(799) {
@@ -36,8 +36,7 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    margin-bottom: 170px;
-    padding: 25px 15px 0 15px;
+    //margin-bottom: 170px;
   }
 }
 
