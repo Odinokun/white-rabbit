@@ -27,6 +27,9 @@ module.exports = function () {
     infinite: true,
     dots: false,
     arrows: false,
+    autoplay: true,
+    speed: 800,
+    autoplaySpeed: 3000,
     slidesToShow: 4,
     slidesToScroll: 2,
     draggable: true,
@@ -45,15 +48,15 @@ module.exports = function () {
     ]
   });
 
-  $(".cases-slider").on("wheel", function (e) {
-    e.preventDefault();
-
-    if (e.originalEvent.deltaY < 0) {
-      $(this).slick("slickPrev");
-    } else {
-      $(this).slick("slickNext");
-    }
-  });
+  // $(".cases-slider").on("wheel", function (e) {
+  //   e.preventDefault();
+  //
+  //   if (e.originalEvent.deltaY < 0) {
+  //     $(this).slick("slickPrev");
+  //   } else {
+  //     $(this).slick("slickNext");
+  //   }
+  // });
   //end cases-slider
 
 
@@ -62,6 +65,9 @@ module.exports = function () {
     infinite: true,
     dots: false,
     arrows: false,
+    autoplay: true,
+    speed: 800,
+    autoplaySpeed: 3000,
     slidesToShow: 4,
     slidesToScroll: 1,
     draggable: true,
@@ -89,15 +95,15 @@ module.exports = function () {
     ]
   });
 
-  $(".project-slider").on("wheel", function (e) {
-    e.preventDefault();
-
-    if (e.originalEvent.deltaY < 0) {
-      $(this).slick("slickPrev");
-    } else {
-      $(this).slick("slickNext");
-    }
-  });
+  // $(".project-slider").on("wheel", function (e) {
+  //   e.preventDefault();
+  //
+  //   if (e.originalEvent.deltaY < 0) {
+  //     $(this).slick("slickPrev");
+  //   } else {
+  //     $(this).slick("slickNext");
+  //   }
+  // });
   //end project-slider
 
   //begin services-slider
