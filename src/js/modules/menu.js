@@ -16,6 +16,9 @@ module.exports = function () {
     $('.header-menu__brief-btn').removeClass("animated fadeInUp");
   })
 
+
+
+
   // end menu
 
 };
