@@ -83,10 +83,10 @@
   }
   &:hover {
     .cases-item__title {
-      color: #b17742;
+      color: #f98e25;
     }
     .cases-item__arr svg {
-      fill: #b17742;
+      fill: #f98e25;
     }
   }
 }
@@ -127,7 +127,7 @@
   line-height: 1;
   display: block;
   margin-bottom: 10px;
-  color: #b17742;
+  color: #f98e25;
 
   @include max(680) {
     font-size: 14px;

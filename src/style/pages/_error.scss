@@ -27,7 +27,7 @@
     display: block;
     padding-left: 95px;
     letter-spacing: .02px;
-    color: #b17742;
+    color: #f98e25;
     &::before {
       position: absolute;
       top: 0;
@@ -37,7 +37,7 @@
       height: 2px;
       margin: auto;
       content: '';
-      background-color: #b17742;
+      background-color: #f98e25;
     }
   }
 }
@@ -163,7 +163,7 @@
     height: 14px;
     transition: stroke .5s;
 
-    stroke: #b17742;
+    stroke: #f98e25;
   }
 }
 

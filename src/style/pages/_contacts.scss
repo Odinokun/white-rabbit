@@ -62,7 +62,7 @@
     display: block;
     padding-left: 95px;
     letter-spacing: .02px;
-    color: #b17742;
+    color: #f98e25;
     &::before {
       position: absolute;
       top: 0;
@@ -72,7 +72,7 @@
       height: 2px;
       margin: auto;
       content: '';
-      background-color: #b17742;
+      background-color: #f98e25;
     }
   }
 }
@@ -195,7 +195,7 @@
   }
   a {
     text-decoration: none;
-    color: #b17742;
+    color: #f98e25;
     &:hover {
       color: #f98e25;
     }
@@ -217,7 +217,7 @@
   }
   a {
     text-decoration: none;
-    color: #b17742;
+    color: #f98e25;
     &:hover {
       color: #f98e25;
     }
@@ -234,7 +234,7 @@
   margin-bottom: 15px;
   text-decoration: none;
   letter-spacing: .02px;
-  color: #b17742;
+  color: #f98e25;
 
   @include max(830) {
     transform: translateX(30px);
