@@ -37,6 +37,8 @@ module.exports = function() {
     block.each(function() {
       let self = $(this),
         height = self.offset().top + self.height();
+
+
       if ($(document).scrollTop() + windowHeight >= height - 100) {
         self.addClass('animated');
         self.addClass('fadeInUp');
