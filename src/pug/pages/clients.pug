@@ -1,0 +1,52 @@
+extends ../_template
+
+block variables
+  - var title       = 'White Rabbit'
+  - var description = 'White Rabbit'
+  - var ogtitle     = 'White Rabbit'
+
+mixin clients-content__item(pic)
+  li.clients-content__item
+    img(src="assets/img/clients/client-" + pic + ".svg" alt="picture")
+
+block content
+  .main-wrap.no-js
+    //begin content
+    main.main.clients
+      include ../sections/header
+
+      h2.clients__bg Clients
+
+      .container
+        .clients-content
+          .clients-content__header
+            span Clients
+
+          .clients-content__body
+            h2.clients-content__title Proud to work with
+            ul.clients-content__list
+              +clients-content__item('01')
+              +clients-content__item('02')
+              +clients-content__item('03')
+              +clients-content__item('04')
+              +clients-content__item('05')
+              +clients-content__item('06')
+              +clients-content__item('07')
+              +clients-content__item('08')
+              +clients-content__item('09')
+              +clients-content__item('10')
+              +clients-content__item('11')
+              +clients-content__item('12')
+              +clients-content__item('13')
+              +clients-content__item('14')
+              +clients-content__item('15')
+
+
+
+      //begin cases__animation-icon
+      a(href="#").cases__animation-icon
+        include ../elements/brief-us
+      //end cases__animation-icon
+      include ../sections/footer
+    //end content
+
