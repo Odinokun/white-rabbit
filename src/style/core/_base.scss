@@ -21,6 +21,9 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 320px;
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
 }
 
 h1,
@@ -124,8 +127,9 @@ ol > *:not(li) {
 .main {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   background-color: #171717;
+
+  flex-grow: 1;
 }
 
 .container {
