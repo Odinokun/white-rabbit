@@ -1,0 +1,19 @@
+extends ../_template
+
+block variables
+  - var title       = 'White Rabbit'
+  - var description = 'White Rabbit'
+  - var ogtitle     = 'White Rabbit'
+
+block content
+  .main-wrap.no-js
+    //begin content
+    main.main.project
+      include ../sections/header
+
+      include ../sections/article-top
+      include ../sections/article-second
+
+      include ../sections/footer
+    //end content
+

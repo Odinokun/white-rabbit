@@ -21,8 +21,6 @@ $(function() {
   // begin Popup
   // require('./modules/popup')();
 
-  // begin Parallax
-  require('./modules/parallax')();
 
   // begin Animate.css
   //РАБОТАЕТ ТОЛЬКО С JQUERY < 3.0.0 !!!!!!!!!!!!!!!!!!
@@ -31,5 +29,8 @@ $(function() {
 
   // begin Fancybox3
   // require('./modules/fancybox')();
+
+  // begin Parallax
+  require('./modules/parallax')();
 
 });

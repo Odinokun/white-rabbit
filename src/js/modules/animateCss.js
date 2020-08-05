@@ -28,7 +28,12 @@ module.exports = function() {
   $('.project-top__anim-icon').addClass("animated fadeIn");
   $('.project-top__descr').addClass("animated fadeIn");
 
+  //blog
+  $('.blog-content__title').addClass("animated fadeInUp");
+  $('.blog__animation-icon').addClass("animated fadeInUp");
+
   //clients
+  $('.clients-content__title').addClass("animated fadeInUp");
   $(".clients-content__item").css('opacity', 0);
 
   function fadeInUp(block) {

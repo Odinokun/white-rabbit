@@ -1,0 +1,76 @@
+mixin blog-content__preview(pic,title)
+  a(href="#").blog-content__preview
+    .blog-content__preview-img-wrap
+      img(src="assets/img/preview-article-" + pic + ".jpg" alt="picture").blog-content__preview-img
+    span.blog-content__preview-date July 14, 2020
+    h3.blog-content__preview-title #{title}
+    span.blog-content__preview-descr Two CIBC Visa brand ambassador worked with Tablet PC inside of Tim Hortons coffee shops and proposed customers to complete the on-line questionarrie to get one free coffee and the opportunity to be approved for Visa credit card by CIBC.
+
+//begin project-second
+.project-second#project-second
+
+  .project-second__bg Blog
+
+  //begin project-second__article
+  .project-second__article
+    .container
+      .project-second__article-item
+        h3.project-second__article-title Promotion of brands
+        p It may seem that promotion of brands in social networks is the simplest task for a prepared agency. This type of ad is ideal for small or medium businesses; and for brands it’s a must. If you are not online, you are not in the consumer basket. You could object saying that you are on the shelf - but it is only the consumer who knows, who may not see you, remember you, or want to buy, if they are not familiar with your social status.
+        p Nowadays, any brand turns faceless without its charismatic life on social media. It’s not enough to have witty naming, logo, slogan or distribution, besides you need to have an understandable background - what is brand character? What is it like? How does it react to the world changing around us and evolve with society. That is being social? Only due to social networks such deep meaning goals like particular brand formation, building loyalty - can be achieved.
+      .project-second__article-item
+        h3.project-second__article-title Some Sub-Header
+        p During the re-opening period after the pandemic, we were promoting a beauty salon via social networks. It is an ordinary small business that depends on customers’ flow. Taking into account that safety is the main insight at this difficult time; nevertheless, consumers want to come to the salon and get its services, we launched a campaign in social networks on the priority service for customers who pay for booking packages in advance.
+        p Over the first 7 days, the campaign covered more than 9 thousand contacts and the next 8 weeks all the salon  had been fully booked, 10 hours a day including weekends. The key task of social media is delivering an advertising message to the right target group and without targeting you cannot proceed with your marketing plan. Tell us who your consumer is. We will find them on the net. Do they only buy at sales? - We will find them. Do they leave baskets full of orders but do not pay? - We will find them. Do they collect pocket books, but they only read cookery books? - We will find them.
+
+      .project-second__article-img
+        img(src="assets/img/article.jpg" alt="picture")
+
+      .project-second__article-item
+        h3.project-second__article-title Some Sub-Header
+        p Do they travel in search of The Rings of Power and have big hairy paws? - We will definitely find them. Customers often chase likes or traffic, which no decent agency will allow you to do. Why? Because by starting unprofessional campaigns, setting wrong advertising goals, and creating junk content, you don’t only lose money or time, you lose respect on the network. After some wrong experience on the network, Facebook (incl. Instagram, WhatsUp, Messenger) will offer you the next targeted tools and optimizations, based on this previous experience that is automatically considered successful even if it isn’t. If experience is poor, future campaigns will be started from this same level.
+        p The moral of this paragraph is to work with professionals, respect yourself, the brands, and undoubtedly the Network.  Our agency has several clients on an ongoing basis. This is a profitable long-term win-win partnership. Firstly, a client works with experienced professionals who get to know its brands better and better after each campaign.
+        p Secondly, permanent partnership includes providing a client with a partial digital strategy and creative ideas for social networks. If a client wants to order a full-fledged strategy, the benefit will also be obvious, because we work at special prices with existing customers that our partners. Thirdly, after the first briefing, our new customers receive 1 free campaign as a gift. The best idea is to start targeting by targeting yourself via choosing the right tools and people who won’t let you down. Now you know that an experienced digital specialist is like a chef of the advertising kitchen. You see social media everywhere, you can save budgets on media coverage and grab your target customers feeling the same excited, building loyalty through networks is also convenient and reliable, as it is easy to verify it in analytical indicators. Wanna give it a go? Follow the white rabbit.
+
+      .project-second__article-item
+        h3.project-second__article-title Some Sub-Header
+        p Do they travel in search of The Rings of Power and have big hairy paws? - We will definitely find them. Customers often chase likes or traffic, which no decent agency will allow you to do. Why? Because by starting unprofessional campaigns, setting wrong advertising goals, and creating junk content, you don’t only lose money or time, you lose respect on the network. After some wrong experience on the network, Facebook (incl. Instagram, WhatsUp, Messenger) will offer you the next targeted tools and optimizations, based on this previous experience that is automatically considered successful even if it isn’t. If experience is poor, future campaigns will be started from this same level.
+        ul.project-second__article-list
+          li.project-second__article-list-item Hard sell
+          li.project-second__article-list-item Collect & get buy & win programs
+          li.project-second__article-list-item Sampling, tasting, demonstrations
+          li.project-second__article-list-item Test-drives
+          li.project-second__article-list-item Trade & road shows
+          li.project-second__article-list-item Sales exhibitions
+          li.project-second__article-list-item Conceptual parties
+          li.project-second__article-list-item Festivals and events
+  //end project-second__article
+
+  //begin project-second__footer
+  .project-second__footer
+    .container
+      .project__rabbit
+        img(src="assets/img/project-rabbit.svg" alt="rabbit")
+        span You may also like
+
+      .project-second__anim-icon
+        include ../elements/brief-us
+
+      a(href="#").project-second__back.project-second-back
+        span.project-second-back__text Back to Blog
+        .project-second-back__svg
+          .project-second-back__svg-arr
+            +svg('all-cases-arr-lr')
+          .project-second-back__svg-circle
+            +svg('all-cases-circle')
+  //end project-second__footer
+
+  //begin project-second__article-previews
+  .project-second__article-previews
+    .container
+      +blog-content__preview('06', 'Social Media')
+      +blog-content__preview('04', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+
+  //end project-second__article-previews
+
+//end project-second

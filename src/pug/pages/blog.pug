@@ -1,0 +1,47 @@
+extends ../_template
+
+block variables
+  - var title       = 'White Rabbit'
+  - var description = 'White Rabbit'
+  - var ogtitle     = 'White Rabbit'
+
+mixin blog-content__preview(pic,title)
+  a(href="#").blog-content__preview
+    .blog-content__preview-img-wrap
+      img(src="assets/img/preview-article-" + pic + ".jpg" alt="picture").blog-content__preview-img
+    span.blog-content__preview-date July 14, 2020
+    h3.blog-content__preview-title #{title}
+    span.blog-content__preview-descr Two CIBC Visa brand ambassador worked with Tablet PC inside of Tim Hortons coffee shops and proposed customers to complete the on-line questionarrie to get one free coffee and the opportunity to be approved for Visa credit card by CIBC.
+
+block content
+  .main-wrap.no-js
+    //begin content
+    main.main.blog
+      include ../sections/header
+
+      h2.blog__bg Blog
+
+      .container
+        .blog-content
+          .blog-content__header
+            span Blog
+
+          .blog-content__body
+            h2.blog-content__title Our thoughts
+            //begin blog__animation-icon
+            .blog__animation-icon
+              include ../elements/use-scroll
+            //end blog__animation-icon
+
+            //begin blog-content__preview-list
+            .blog-content__preview-list
+              +blog-content__preview('01', 'Social Media: How Using Social Media Affects Teenagers')
+              +blog-content__preview('02', 'Social Media')
+              +blog-content__preview('03', 'Social Media: How Using Social Media Affects Teenagers')
+              +blog-content__preview('04', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+              +blog-content__preview('05', 'Social Media: How Using Social Media Affects Teenagers')
+              +blog-content__preview('06', 'Social Media')
+            //end blog-content__preview-list
+      include ../sections/footer
+    //end content
+
