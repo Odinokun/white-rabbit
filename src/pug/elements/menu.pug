@@ -2,7 +2,7 @@
 .header__menu.header-menu
   //begin header-menu__mobile-header
   .header-menu__mobile-header
-    a(href="#").header-menu__mobile-logo
+    a(href="/").header-menu__mobile-logo
       img(src="assets/img/logo-slogan-mobile-menu.svg" alt="White Rabbit")
     a(href="#").header-menu__close
       +svg('close')
@@ -13,15 +13,15 @@
     li.header-menu__item
       a(href="/").header-menu__link.active Home
     li.header-menu__item
-      a(href="#").header-menu__link Services
+      a(href="services.html").header-menu__link Services
     li.header-menu__item
-      a(href="#").header-menu__link Cases
+      a(href="cases.html").header-menu__link Cases
     li.header-menu__item
       a(href="clients.html").header-menu__link Clients
     li.header-menu__item
       a(href="blog.html").header-menu__link Blog
     li.header-menu__item
-      a(href="#").header-menu__link Contacts
+      a(href="contacts.html").header-menu__link Contacts
   //end header-menu__list
 
   a(href="#").header-menu__brief-btn.brief-btn
@@ -29,11 +29,11 @@
     +svg('carrot')
 
   .header-menu__socials
-    a(href="#" target='_blank').header-menu__social.header-menu__social--fb
+    a(href="https://www.facebook.com/home.php" target='_blank' rel="nofollow noopener noreferrer").header-menu__social.header-menu__social--fb
       +svg('fb')
-    a(href="#" target='_blank').header-menu__social.header-menu__social--inst
+    a(href="https://www.instagram.com/" target='_blank' rel="nofollow noopener noreferrer").header-menu__social.header-menu__social--inst
       +svg('inst')
-    a(href="#" target='_blank').header-menu__social.header-menu__social--in
+    a(href="https://www.linkedin.com/feed/" target='_blank' rel="nofollow noopener noreferrer").header-menu__social.header-menu__social--in
       +svg('in')
 
   span.header-menu__copyright We are human rights fighters, animals lovers, recycling doers, climate change supporters. All rights reserved @ TBD
